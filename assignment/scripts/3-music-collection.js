@@ -8,7 +8,7 @@ console.log('***** Music Collection *****')
 console.log ('--- 1. collection variable with empty array ---')
 //- Create a variable `collection` that starts as an empty array.
 const collection = [];
-console.log('Collection array', collection); // empty 
+console.log('Collection array:', collection); // empty 
 
 
 console.log('--- 2. addToCollection function ---')
@@ -24,7 +24,8 @@ console.log('--- 2. addToCollection function ---')
 
 console.log('--- 3. Add 6 albums to your collection ---')
 // - Test the `addToCollection` function:
-//   - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. 
+//   - Add 6 albums to your collection. Aim to have a mix of both 
+//      same and different artists and published years. 
 //      (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
 //   - Console.log each album as added using the returned value.
 //   - After all are added, console.log the `collection` array.
@@ -33,7 +34,7 @@ console.log('--- 3. Add 6 albums to your collection ---')
 //
 //
 
-console.log('--- 4. showCollection function---')
+console.log('--- 4. showCollection function ---')
 // - Add a function named `showCollection`. This function should:
 //   - Take in an array parameter. (This allows it to be reused to show any collection, 
 //     like the results from the find or search.)
@@ -52,7 +53,7 @@ console.log('--- 6. TEST: showCollection function ---')
 //
 //
 
-console.log('--- 7. findByArtist function---')
+console.log('--- 7. findByArtist function ---')
 // - Add a function named `findByArtist`. This function should:
 //   - Take in `artist` (a string) parameter
 //   - Create an array to hold any results, empty to start
@@ -63,7 +64,7 @@ console.log('--- 7. findByArtist function---')
 //
 //
 
-console.log('--- 7. TEST: findByArtist function---')
+console.log('--- 7. TEST: findByArtist function ---')
 // - Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, 
 //    as well as an artist you know is not in your collection. 
 //    Check that for artists with multiple matches, all are found.
@@ -86,7 +87,8 @@ console.log('--- A. STRETCH GOAL: search function')
 //   - The returned output from `search` should meet these requirements:
 //     - Return a new array of all items in the `collection` matching *all* of the search criteria.
 //     - If no results are found, return an empty array.
-//     - If there is no search object or an empty search object provided as input, then return all albums in the `collection`.
+//     - If there is no search object or an empty search object provided as input, 
+//         then return all albums in the `collection`.
 // 
 //***COMMENTS: 
 //
