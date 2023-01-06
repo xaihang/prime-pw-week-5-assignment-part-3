@@ -1,5 +1,10 @@
 console.log('***** Music Collection *****')
 
+// REMINDERS:
+// > When testing your functions, write all tests in the JavaScript file!
+// > Make sure to test all your code!
+
+
 console.log ('--- 1. collection variable with empty array ---')
 //- Create a variable `collection` that starts as an empty array.
 const collection = [];
