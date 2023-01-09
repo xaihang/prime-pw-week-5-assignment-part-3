@@ -77,17 +77,29 @@ console.log('--- 4. showCollection function ---')
 //   `TITLE by ARTIST, published in YEAR`.
 //
 //***COMMENTS: 
-//
-//
-//
-console.log('--- 6. TEST: showCollection function ---')
+//  declared showCollection function with array as placeholder (parameter)
+//  looping through each of the items inside the collection 
+//  console.log each of the collection's album
+//  and return collection's property (key-value) items in 'title, artist, yearPublished' order
+function showCollection(array) {
+// console.log(collection.length); // currently have 10 items
+for (i = 0; i <collection.length; i++) {
+    console.log(collection[i]); 
+    }; 
+    return collection;
+}
+
+console.log('--- 5. TEST: showCollection function ---')
 // - Test the `showCollection` function.
 //
 //***COMMENTS: 
-//
-//
+// console.log collection.length to see how many item is currently in array = 10 items 
+// console.log showCollection(collection) ==> use 'collection' as the argument to invoked the showCollection()
+console.log(collection.length); // 10 items in 'collection' array
+console.log('Show collection:',showCollection(collection)); 
 
-console.log('--- 7. findByArtist function ---')
+
+console.log('--- 6. findByArtist function ---')
 // - Add a function named `findByArtist`. This function should:
 //   - Take in `artist` (a string) parameter
 //   - Create an array to hold any results, empty to start
