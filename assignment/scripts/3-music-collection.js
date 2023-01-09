@@ -14,39 +14,59 @@ console.log('Collection array:', collection); // empty
 console.log('--- 2. addToCollection function ---')
 // - Add a function named `addToCollection`. This function should:
 //   ✅ Take in the album's `title`, `artist`, `yearPublished` as input parameters
-//   - Create a new object having the above properties
-//   - Add the new object to the end of the `collection` array
-//   - Return the newly created object
+//   ✅ Create a new object having the above properties
+//   ✅ Add the new object to the end of the `collection` array
+//   ✅ Return the newly created object
 //
 //***COMMENTS:
 //  declared addToCollection function with parameters above
 //  inside block we created a new object with properties: title, artist, yearPublished
 //  each time we add a new album we are going to push it to the collection array
 //  and return the new added album 
-//  to add new album(s) we can invoked the addToCollection() and pass the appropriate arguments we will like pass/test
-//  finally console.log the 'collection' array to see what's in the array  
+//
 function addToCollection(title, artist, yearPublished) {
     const album = {title, artist, yearPublished};
     collection.push(album);
     return album; 
 }
 addToCollection('Roll the dough', 'JillyJam', 2023);
-addToCollection('Pancakes is square', 'Fly Cake', 1977);
+addToCollection('Pancakes is square', 'Fly Cake', 1988);
 addToCollection('Fire cracker', 'Chowmein', 1999);
 addToCollection('Minty fresh', 'CoolDawg', 2001);
-console.log('My collection ablums:', collection); 
+console.log('My collection albums:', collection); 
 
 console.log('--- 3. Add 6 albums to your collection ---')
 // - Test the `addToCollection` function:
-//   - Add 6 albums to your collection. Aim to have a mix of both 
+//   ✅ Add 6 albums to your collection. Aim to have a mix of both 
 //      same and different artists and published years. 
 //      (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
-//   - Console.log each album as added using the returned value.
-//   - After all are added, console.log the `collection` array.
+//   ✅ Console.log each album as added using the returned value.
+//   ✅ After all are added, console.log the `collection` array.
 //
 //***COMMENTS: 
+//  to add new album(s) we can invoked the addToCollection() and pass the appropriate arguments we will like pass/test
+//  console.log the 'collection' array to see what's in the array  
 //
-//
+// addToCollection('Bow-WOW', 'CoolDawg', 2001); 
+console.log('Added to albums collection:', addToCollection('Bow-WOW', 'CoolDawg', 2001));
+
+// addToCollection('Pop and Soda', 'JillyJam', 2023);
+console.log('Added to albums collection:', addToCollection('Pop and Soda', 'JillyJam', 2023));
+
+// addToCollection('Froth the coffee', 'Triple Beans', 1988); 
+console.log('Added to albums collection:', addToCollection('Froth the coffee', 'Triple Beans', 1988));
+
+// addToCollection('Running on Mars', 'Chowmein', 2000); 
+console.log('Added to albums collection:', addToCollection('Running on Mars', 'Chowmein', 2000));
+
+// addToCollection('Purple veins', 'Stein', 2013); 
+console.log('Added to albums collection:', addToCollection('Purple veins', 'Stein', 2013));
+
+// addToCollection('Beyond', 'Stein', 2015);
+console.log('Added to albums collection:', addToCollection('Beyond', 'Stein', 2015));
+
+console.log('Final albums Collection:', collection); // see the final collection array 
+
 
 console.log('--- 4. showCollection function ---')
 // - Add a function named `showCollection`. This function should:
@@ -59,7 +79,7 @@ console.log('--- 4. showCollection function ---')
 //***COMMENTS: 
 //
 //
-
+//
 console.log('--- 6. TEST: showCollection function ---')
 // - Test the `showCollection` function.
 //
