@@ -6,21 +6,35 @@ console.log('***** Music Collection *****')
 
 
 console.log ('--- 1. collection variable with empty array ---')
-//- Create a variable `collection` that starts as an empty array.
+// ✅ Create a variable `collection` that starts as an empty array.
 const collection = [];
 console.log('Collection array:', collection); // empty 
 
 
 console.log('--- 2. addToCollection function ---')
 // - Add a function named `addToCollection`. This function should:
-//   - Take in the album's `title`, `artist`, `yearPublished` as input parameters
+//   ✅ Take in the album's `title`, `artist`, `yearPublished` as input parameters
 //   - Create a new object having the above properties
 //   - Add the new object to the end of the `collection` array
 //   - Return the newly created object
 //
 //***COMMENTS:
-//
-//
+//  declared addToCollection function with parameters above
+//  inside block we created a new object with properties: title, artist, yearPublished
+//  each time we add a new album we are going to push it to the collection array
+//  and return the new added album 
+//  to add new album(s) we can invoked the addToCollection() and pass the appropriate arguments we will like pass/test
+//  finally console.log the 'collection' array to see what's in the array  
+function addToCollection(title, artist, yearPublished) {
+    const album = {title, artist, yearPublished};
+    collection.push(album);
+    return album; 
+}
+addToCollection('Roll the dough', 'JillyJam', 2023);
+addToCollection('Pancakes is square', 'Fly Cake', 1977);
+addToCollection('Fire cracker', 'Chowmein', 1999);
+addToCollection('Minty fresh', 'CoolDawg', 2001);
+console.log('My collection ablums:', collection); 
 
 console.log('--- 3. Add 6 albums to your collection ---')
 // - Test the `addToCollection` function:
