@@ -142,13 +142,14 @@ function showCollection(collectionArray) {
   //     TITLE by ARTIST, published in YEAR:
   //     1. NAME: DURATION
   //     2. NAME: DURATION
-  // console.log(collection.length); // currently have 10 items
+  console.log('Number of items in collection: ', collection.length);
   for (i = 0; i < collectionArray.length; i++) {
     let currentAlbum = collectionArray[i];
     console.log(
       `${currentAlbum.title} by ${currentAlbum.artist}, published in ${currentAlbum.yearPublished}:`
     );
 
+    //stretch goal - B-3: //
     let tracks = currentAlbum.tracks;
 
     for (j = 0; j < tracks.length; j++) {
@@ -241,6 +242,13 @@ console.log('--- A. STRETCH GOAL: search function');
 //      
 function search(searchCriteria) {
   const searchResults = [];
+  
+//If there is no search object or an empty search object provided as input,
+//  then return all albums in the `collection`.
+  if (searchCriteria === undefined || searchCriteria === {}) {
+    return collection;
+  }
+   
   for (i = 0; i < collection.length; i++) {
     // flag that all the conditions is valid/good
     let isAllConditionMatch = true;
@@ -295,6 +303,9 @@ function search(searchCriteria) {
   }
   return searchResults;
 }
+//  testing search(empty search):
+console.log('Searching for NOTHING: ',search()); // returned the whole list from 'collection' array
+console.log('Searching for EMPTY OBJECT: ',search({})); // returned the whole list from 'collection' array
 
 //  testing search(artist, yearPublished):
 console.log('Searching for artist Chowmein & year 2000:',search({ artist: 'Chowmein', yearPublished: 2000 }));
