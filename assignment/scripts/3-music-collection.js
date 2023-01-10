@@ -297,35 +297,21 @@ function search(searchCriteria) {
 }
 
 //  testing search(artist, yearPublished):
-console.log(
-  'Searching for artist Chowmein & year 2000:',
-  search({ artist: 'Chowmein', yearPublished: 2000 })
-);
-console.log(
-  'Searching for artist SillyDolls & year 2013:',
-  search({ artist: 'SillyDolls', yearPublished: 2013 })
-);
+console.log('Searching for artist Chowmein & year 2000:',search({ artist: 'Chowmein', yearPublished: 2000 }));
+console.log('Searching for artist SillyDolls & year 2013:',search({ artist: 'SillyDolls', yearPublished: 2013 }));
+console.log('Searching for artist BillyJoe & year 1987:',search({ artist: 'BillyJoe', yearPublished: 1987 })); // not in database - empty array
 //  testing search(artist):
-console.log(
-  'Searching for all artist Triple Beans',
-  search({ artist: 'Triple Beans' })
-);
-console.log(
-  'Searching for all artist JillyJam:',
-  search({ artist: 'JillyJam' })
-);
+console.log('Searching for all artist Triple Beans',search({ artist: 'Triple Beans' }));
+console.log('Searching for all artist JillyJam:',search({ artist: 'JillyJam' }));
+console.log('Searching for all artist Tyson:',search({ artist: 'Tyson' })); // not in database - empty array
 //  testing search(yearPublished):
 console.log('Searching for all year 1988:', search({ yearPublished: 1988 }));
 console.log('Searching for all year 2001:', search({ yearPublished: 2001 }));
+console.log('Searching for all year 1977:', search({ yearPublished: 1977 })); // not in database - empty array
 //  testing search(trackName) --- part of stretch goal #B-2:
-console.log(
-  'Searching for track name "Latte plz!":',
-  search({ trackName: 'Latte plz!' })
-);
-console.log(
-  'Searching for track name "Sun shiitake":',
-  search({ trackName: 'Sun shiitake' })
-);
+console.log('Searching for track name "Latte plz!":',search({ trackName: 'Latte plz!' }));
+console.log('Searching for track name "Sun shiitake":',search({ trackName: 'Sun shiitake' }));
+console.log('Searching for track name "Horse farm":',search({ trackName: 'Horse farm' })); // not in database - empty array
 
 console.log('--- B. STRETCH GOAL: add tracks to album ');
 // *B-1: Add an array of `tracks` to your album objects. Each track should have a `name` and `duration`.
