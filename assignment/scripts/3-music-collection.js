@@ -5,16 +5,16 @@ console.log('***** Music Collection *****');
 // > Make sure to test all your code!
 
 console.log('--- 1. collection variable with empty array ---');
-// ✅ Create a variable `collection` that starts as an empty array.
+// -Create a variable `collection` that starts as an empty array.
 const collection = [];
 console.log('Collection array:', collection); // empty
 
 console.log('--- 2. addToCollection function ---');
 // - Add a function named `addToCollection`. This function should:
-//   ✅ Take in the album's `title`, `artist`, `yearPublished` as input parameters
-//   ✅ Create a new object having the above properties
-//   ✅ Add the new object to the end of the `collection` array
-//   ✅ Return the newly created object
+//   -Take in the album's `title`, `artist`, `yearPublished` as input parameters
+//   -Create a new object having the above properties
+//   -Add the new object to the end of the `collection` array
+//   - Return the newly created object
 //
 //***COMMENTS:
 //  declared addToCollection function with parameters above
@@ -51,71 +51,40 @@ function addToCollection(title, artist, yearPublished, tracks) {
 // addToCollection(title, artist, yearPublished, tracks);
 addToCollection('Roll the dough', 'JillyJam', 2023, [
   { name: 'Kneel it', duration: '4:31' },
-  { name: 'Shifty-shifty', duration: '5:10' },
-]);
+  { name: 'Shifty-shifty', duration: '5:10' },]);
+
 addToCollection('Pancakes is square', 'Fly Cake', 1988, [
   { name: 'Cookies', duration: '4:33' },
-  { name: 'Icy nice', duration: '5:33' },
-]);
+  { name: 'Icy nice', duration: '5:33' },]);
+
 addToCollection('Fire cracker', 'Chowmein', 1999, [
-  { name: 'Crispy Noodles', duration: '4:15' },
-]);
+  { name: 'Crispy Noodles', duration: '4:15' },]);
+
 addToCollection('Minty fresh', 'CoolDawg', 2001, [
-  { name: 'Apple Jack', duration: '5:59' },
-]);
+  { name: 'Apple Jack', duration: '5:59' },]);
+
 console.log('My collection albums:', collection);
 
 console.log('--- 3. Add 6 albums to your collection ---');
 // - Test the `addToCollection` function:
-//   ✅ Add 6 albums to your collection. Aim to have a mix of both
+//   - Add 6 albums to your collection. Aim to have a mix of both
 //      same and different artists and published years.
 //      (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
-//   ✅ Console.log each album as added using the returned value.
-//   ✅ After all are added, console.log the `collection` array.
+//   -Console.log each album as added using the returned value.
+//   - After all are added, console.log the `collection` array.
 //
 //***COMMENTS:
 //  to add new album(s) we can invoked the addToCollection() and pass the appropriate arguments we will like pass/test
 //  console.log the 'collection' array to see what's in the array
 //
-console.log(
-  'Added to albums collection:',
-  addToCollection('Bow-WOW', 'CoolDawg', 2001, [
-    { name: 'Meow-Naw', duration: '4:23' },
-  ])
-);
-console.log(
-  'Added to albums collection:',
-  addToCollection('Pop and Soda', 'JillyJam', 2023, [
-    { name: 'Raw sugar', duration: '5:10' },
-  ])
-);
-console.log(
-  'Added to albums collection:',
-  addToCollection('Froth the coffee', 'Triple Beans', 1988, [
-    { name: 'Latte plz!', duration: '5:34' },
-  ])
-);
-console.log(
-  'Added to albums collection:',
-  addToCollection('Running on Mars', 'Chowmein', 2000, [
-    { name: 'Moon cake', duration: '3:12' },
-    { name: 'Sun shiitake', duration: '5:18' },
-  ])
-);
-console.log(
-  'Added to albums collection:',
-  addToCollection('Purple veins', 'SillyDolls', 2013, [
-    { name: 'PinkDye', duration: '4:55' },
-  ])
-);
-console.log(
-  'Added to albums collection:',
-  addToCollection('Beyond', 'SillyDolls', 2015, [
-    { name: 'Infinity', duration: '6:02' },
-    { name: 'Never-more', duration: '4:16' },
-  ])
-);
-console.log('Final albums Collection:', collection); // see the final collection array
+console.log('Added to albums collection:',addToCollection('Bow-WOW', 'CoolDawg', 2001, [{ name: 'Meow-Naw', duration: '4:23' },]));
+console.log('Added to albums collection:',addToCollection('Pop and Soda', 'JillyJam', 2023, [{ name: 'Raw sugar', duration: '5:10' },]));
+console.log('Added to albums collection:',addToCollection('Froth the coffee', 'Triple Beans', 1988, [{ name: 'Latte plz!', duration: '5:34' },]));
+console.log('Added to albums collection:',addToCollection('Running on Mars', 'Chowmein', 2000, [{ name: 'Moon cake', duration: '3:12' },{ name: 'Sun shiitake', duration: '5:18' },]));
+console.log('Added to albums collection:',addToCollection('Purple veins', 'SillyDolls', 2013, [{ name: 'PinkDye', duration: '4:55' },]));
+console.log('Added to albums collection:',addToCollection('Beyond', 'SillyDolls', 2015, [{ name: 'Infinity', duration: '6:02' },{ name: 'Never-more', duration: '4:16' },]));
+// see the final collection array:
+console.log('Final albums Collection:', collection); 
 
 console.log('--- 4. showCollection function ---');
 // - Add a function named `showCollection`. This function should:
@@ -133,27 +102,25 @@ console.log('--- 4. showCollection function ---');
 //    +++STRETCH GOAL ADD ON COMMENTS:
 //          we created a new variable 'tracks' to hold the current album tracks for easier use/read
 //          looping through the current track and console.log as formatted:  [index + 1]. NAME: DURATION
+//     TITLE by ARTIST, published in YEAR:
+//     1. NAME: DURATION
+//     2. NAME: DURATION
+//     3. NAME: DURATION
 //
 function showCollection(collectionArray) {
-  //     TITLE by ARTIST, published in YEAR:
-  //     1. NAME: DURATION
-  //     2. NAME: DURATION
-  //     3. NAME: DURATION
-  //     TITLE by ARTIST, published in YEAR:
-  //     1. NAME: DURATION
-  //     2. NAME: DURATION
-  console.log('Number of items in collection: ', collection.length);
+
+  console.log('Number of items in collection:', collection.length);
   for (i = 0; i < collectionArray.length; i++) {
     let currentAlbum = collectionArray[i];
-    console.log(
-      `${currentAlbum.title} by ${currentAlbum.artist}, published in ${currentAlbum.yearPublished}:`
-    );
+    //console.log the album as formatted: `TITLE by ARTIST, published in YEAR`: 
+    console.log(`${currentAlbum.title} by ${currentAlbum.artist}, published in ${currentAlbum.yearPublished}:`);
 
-    //stretch goal - B-3: //
+    //STRETCH GOAL (B-3): 
     let tracks = currentAlbum.tracks;
 
     for (j = 0; j < tracks.length; j++) {
       let currentTrack = tracks[j];
+      //console.log as formatted:  [index + 1]. NAME: DURATION
       console.log(`${j + 1}. ${currentTrack.name}: ${currentTrack.duration}`);
     }
   }
@@ -165,7 +132,7 @@ console.log('--- 5. TEST: showCollection function ---');
 //***COMMENTS:
 // console.log collection.length to see how many item is currently in array = 10 items
 // console.log showCollection(collection) ==> use 'collection' as the argument to invoked the showCollection()
-console.log('Collection length:', collection.length); // 10 items in 'collection' array
+console.log('Number of albums in collection:', collection.length); // 10 items/album in 'collection' array
 console.log('Show collection:'), showCollection(collection);
 
 console.log('--- 6. findByArtist function ---');
@@ -224,9 +191,9 @@ console.log('--- A. STRETCH GOAL: search function');
 //   { artist: 'Ray Charles', year: 1957 }
 //   ```
 //   - The returned output from `search` should meet these requirements:
-//     - Return a new array of all items in the `collection` matching *all* of the search criteria.
-//     - If no results are found, return an empty array.
-//     - If there is no search object or an empty search object provided as input,
+//     A) Return a new array of all items in the `collection` matching *all* of the search criteria.
+//     B) If no results are found, return an empty array.
+//     C) If there is no search object or an empty search object provided as input,
 //         then return all albums in the `collection`.
 //
 //***COMMENTS:
@@ -243,7 +210,7 @@ console.log('--- A. STRETCH GOAL: search function');
 function search(searchCriteria) {
   const searchResults = [];
   
-//If there is no search object or an empty search object provided as input,
+//  If there is no search object or an empty search object provided as input,
 //  then return all albums in the `collection`.
   if (searchCriteria === undefined || searchCriteria === {}) {
     return collection;
@@ -311,14 +278,17 @@ console.log('Searching for EMPTY OBJECT: ',search({})); // returned the whole li
 console.log('Searching for artist Chowmein & year 2000:',search({ artist: 'Chowmein', yearPublished: 2000 }));
 console.log('Searching for artist SillyDolls & year 2013:',search({ artist: 'SillyDolls', yearPublished: 2013 }));
 console.log('Searching for artist BillyJoe & year 1987:',search({ artist: 'BillyJoe', yearPublished: 1987 })); // not in database - empty array
+
 //  testing search(artist):
 console.log('Searching for all artist Triple Beans',search({ artist: 'Triple Beans' }));
 console.log('Searching for all artist JillyJam:',search({ artist: 'JillyJam' }));
 console.log('Searching for all artist Tyson:',search({ artist: 'Tyson' })); // not in database - empty array
+
 //  testing search(yearPublished):
 console.log('Searching for all year 1988:', search({ yearPublished: 1988 }));
 console.log('Searching for all year 2001:', search({ yearPublished: 2001 }));
 console.log('Searching for all year 1977:', search({ yearPublished: 1977 })); // not in database - empty array
+
 //  testing search(trackName) --- part of stretch goal #B-2:
 console.log('Searching for track name "Latte plz!":',search({ trackName: 'Latte plz!' }));
 console.log('Searching for track name "Sun shiitake":',search({ trackName: 'Sun shiitake' }));
