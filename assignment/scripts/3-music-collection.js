@@ -290,7 +290,7 @@ console.log('Searching for track name "Latte plz!":',search({ trackName: 'Latte 
 console.log('Searching for track name "Sun shiitake":',search({ trackName: 'Sun shiitake' }));
 console.log('Searching for track name "Horse farm":',search({ trackName: 'Horse farm' })); // not in database - empty array
 
-console.log('--- B. STRETCH GOAL: add tracks to album ');
+console.log('--- B. STRETCH GOAL: update addToCollection(), update search(), & showCollection() display ');
 // *B-1: Add an array of `tracks` to your album objects. Each track should have a `name` and `duration`.
 //     You will need to update the functions to support this new property:
 //   - Update the `addToCollection` function to also take an input parameter for the array of tracks.
