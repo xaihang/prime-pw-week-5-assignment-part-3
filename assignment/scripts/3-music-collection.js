@@ -41,8 +41,6 @@ function addToCollection(title, artist, yearPublished, tracks) {
 // addToCollection('Fire cracker', 'Chowmein', 1999);
 // addToCollection('Minty fresh', 'CoolDawg', 2001);
 
-//updated addToCollection() with track info:
-
 // let title = 'Roll the dough';
 // let artist = 'JillyJam';
 // let yearPublished = 'JillyJam';
@@ -63,7 +61,7 @@ addToCollection('Fire cracker', 'Chowmein', 1999, [
 addToCollection('Minty fresh', 'CoolDawg', 2001, [
   { name: 'Apple Jack', duration: '5:59' },]);
 
-console.log('My collection albums:', collection);
+console.log('My albums collection:', collection);
 
 console.log('--- 3. Add 6 albums to your collection ---');
 // - Test the `addToCollection` function:
@@ -86,7 +84,7 @@ console.log('Added to albums collection:',addToCollection('Beyond', 'SillyDolls'
 // see the final collection array:
 console.log('Final albums Collection:', collection); 
 
-console.log('--- 4. showCollection function ---');
+console.log('--- 4. showCollection function & Testings ---');
 // - Add a function named `showCollection`. This function should:
 //   - Take in an array parameter. (This allows it to be reused to show any collection,
 //     like the results from the find or search.)
@@ -126,7 +124,6 @@ function showCollection(collectionArray) {
   }
 }
 
-console.log('--- 5. TEST: showCollection function ---');
 // - Test the `showCollection` function.
 //
 //***COMMENTS:
@@ -135,7 +132,7 @@ console.log('--- 5. TEST: showCollection function ---');
 console.log('Number of albums in collection:', collection.length); // 10 items/album in 'collection' array
 console.log('Show collection:'), showCollection(collection);
 
-console.log('--- 6. findByArtist function ---');
+console.log('--- 5. findByArtist function & Testings ---');
 // - Add a function named `findByArtist`. This function should:
 //   - Take in `artist` (a string) parameter
 //   - Create an array to hold any results, empty to start
@@ -160,7 +157,6 @@ function findByArtist(artist) {
   return searchResults;
 }
 
-console.log('--- 7. TEST: findByArtist function ---');
 // - Test the `findByArtist` function. Make sure to test with an artist you know is in the collection,
 //    as well as an artist you know is not in your collection.
 //    Check that for artists with multiple matches, all are found.
